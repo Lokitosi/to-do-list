@@ -1,0 +1,39 @@
+/* CSS */
+.CreateTodoButton {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgb(20, 133, 167) 0%,
+    rgb(77, 141, 4) 100%
+  );
+  border: none;
+  height: 64px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  /*letter-spacing: 0.05em;*/
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.CreateTodoButton:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #588a0898;
+}
+
+.CreateTodoButton:active {
+  box-shadow: 0 0.3em 1em -0.5em #025a4098;
+}
