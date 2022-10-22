@@ -1,11 +1,13 @@
 import React from "react";
-import "../styles/TodoItem.css";
+import "./TodoItem.css";
 
 function TodoItem(props) {
+
   return (
     <li className="TodoItem">
       <span
         className={`Icon Icon-Check ${props.completed && "Icon-check--active"}`}
+        onClick={props.onComplete}
       >
         ✓
       </span>
@@ -14,6 +16,7 @@ function TodoItem(props) {
       </p>
       <span
         className="Icon Icon-delete"
+        onClick={props.onDelete}
       >
         X
       </span>
