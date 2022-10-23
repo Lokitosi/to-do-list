@@ -28,6 +28,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  z-index: 1;
 }
 
 .CreateTodoButton:hover {

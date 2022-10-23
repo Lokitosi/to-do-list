@@ -1,5 +1,6 @@
 import React from "react";
 import "./TodoItem.css";
+import {MdPlaylistAddCheck, MdDeleteSweep} from 'react-icons/md';
 
 function TodoItem(props) {
 
@@ -9,7 +10,7 @@ function TodoItem(props) {
         className={`Icon Icon-Check ${props.completed && "Icon-check--active"}`}
         onClick={props.onComplete}
       >
-        ✓
+        <MdPlaylistAddCheck/>
       </span>
       <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>
         {props.text}
@@ -18,7 +19,7 @@ function TodoItem(props) {
         className="Icon Icon-delete"
         onClick={props.onDelete}
       >
-        X
+        <MdDeleteSweep/>
       </span>
     </li>
   );
