@@ -27,7 +27,7 @@ function useLocalStorage(itemName, initialValue) {
       }catch(error){
         setError(error);
       }
-    }, 5000);
+    }, 3000);
   });
 
   //funcion para persistencia

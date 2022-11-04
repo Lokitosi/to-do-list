@@ -1,16 +1,16 @@
 ul{
     justify-content: space-evenly;
     list-style: none; 
-    display: flex;/*s
+    display: flex;
     flex-wrap: wrap;
     padding: 0 20px 56px 20px;
-     */
 }
 
 @media screen and (max-width: 1056px) {
     ul { 
       -ms-flex-direction: column;
       -webkit-box-orient: vertical;
-      flex-direction: column; 
+      flex-direction: column;
+      flex-wrap: calc(100% - 120px); 
     }
   }

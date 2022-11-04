@@ -14,19 +14,26 @@ function TodoItem(props) {
         <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>
           {props.text}
         </p>
-        <span
-          className={`Icon Icon-Check ${props.completed && "Icon-check--active"}`}
-          onClick={props.onComplete}
-        >
-          <MdPlaylistAddCheck />
-        </span>
-        <span
-          className="Icon Icon-delete"
-          onClick={props.onDelete}
-        >
-          <MdDeleteSweep />
-        </span>
-
+        <div className="Options">
+          <div className="Complete">
+            <span
+              className={`Icon Icon-Check ${props.completed && "Icon-check--active"}`}
+              onClick={props.onComplete}
+            >
+              <MdPlaylistAddCheck />
+            </span>
+            <p>Completar</p>
+          </div>
+          <div className="Delete">
+            <span
+              className="Icon Icon-delete"
+              onClick={props.onDelete}
+            >
+              <MdDeleteSweep />
+            </span>
+            <p>Eliminar</p>
+          </div>
+        </div>
       </li>
     </div>
   );

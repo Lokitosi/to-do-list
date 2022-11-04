@@ -65,20 +65,20 @@
   
   .Icon-check {
     position: absolute;
-    left: 200px;
+    left: 10px;
   }
+
   .Icon-check--active {
     color: #4caf50;
   }
-  .Icon-check:hover{
+
+  .Complete:hover{
     color:#4caf50;
   }
-  .Icon-delete:hover {
+  .Delete:hover {
     color: red;
   }
-
-
-  
+ 
   .Icon-Delete {
     justify-self: end;
   }
@@ -86,12 +86,9 @@
   .Icon-check {
     font-size: 30px;
   }
-      
-  /* RESPONSIVE */
   
-  @media (max-width: 1600px) {
-    .cards {
-      justify-content: center;
-    }
+  .Options{
+    display:flex;
+    justify-content: right;
+    padding-top: 10px;
   }
-  
